@@ -1,0 +1,210 @@
+/* google font "just another hand" */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Just+Another+Hand&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #40c9ff, #e81cff);
+    overflow: hidden;
+}
+.header-section{
+    height: 100px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-icon-header{
+    display: none;
+}
+#cloud-icon-header{
+    font-size: 16rem;
+    color: #fff;
+    transform: rotate(166deg);
+    width: fit-content;
+    position: fixed;
+    z-index: 0;
+    top: -58px;
+    left: 15px;
+}
+.menu-icon-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 90px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    max-width: 80%;
+    max-height: 600px;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 1rem;
+    z-index: 1;
+}
+.menu-icon-list a{
+    margin: .5rem;
+    text-decoration: none;
+    color: #FFFF47;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+.menu-icon-list a:hover{
+    border-bottom: 1px solid #e81cff;
+    text-shadow: 1px 1px goldenrod;
+}
+#weatherify-logo{
+    max-width: 160px;
+    margin-left: 10px;
+    z-index: 1;
+    flex: 0 1 40%;
+}
+.menu-bar-header{
+    flex: 0 1 60%;
+    display: flex;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+.menu-bar-header a{
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.bolticon-menu{
+    position: absolute;
+    top: 18px;
+    display: none;
+}
+#home-menu-bolt{
+    right: 275px;
+}
+#contact-menu-bolt{
+    right: 193px;
+}
+#about-menu-bolt{
+    right: 114px;
+}
+#home-menu:hover + #home-menu-bolt{
+    display: block;
+}
+#contact-menu:hover + #contact-menu-bolt{
+    display: block;
+}
+#about-menu:hover + #about-menu-bolt{
+    display: block;
+}
+.content-section{
+    padding: 100px 0px;
+}
+#snowman-content{
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+}
+#snowflakes-content{
+    position: fixed;
+    right: 10px;
+    top: 20%;
+}
+.report-side{
+    flex: 0 1 60%;
+}
+.default-forecast-div{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: stretch;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );    
+}
+.search-side{
+    flex: 0 1 40%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 290px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.weather-widget{
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.weather-widget-table{
+    width: 100%;
+    padding: 5px;
+}
+.weather-widget-table tr{
+    margin: 5px;
+}
+.weather-widget-table td{
+    margin: 5px;
+}
+#img-weather-widget + #img-weather-widget-hiddenDiv{
+    max-width: 100px;
+    font-size: 2rem;
+}
+.weather-widget-table span{
+    color: #FFFF47;
+    font-weight: 700;
+    text-shadow: 1px 1px rgba(0, 0, 0, .5);
+    font-family: 'Righteous', cursive;
+}
+.hidden-div{
+    display: none;
+}
+.hidden-div span{
+    color: #1A1A00;
+    text-shadow: none;
+}
+.heading-searchSide{
+    font-size: 3rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Just Another Hand', cursive;
+}
+.searchSide-btn{
+    color: #fff;
+    background-color: #48C7FD;
+    border: none;
+    border-radius: 10px;
+    padding: .8rem;
+    font-size: 1.1rem;
+}
+.searchSide-btn:active{
+    border: none;
+}
+.searchSide-btn::selection{
+    border: none;
+}
+.searchSide-btn::placeholder{
+    color: #fff;
+}

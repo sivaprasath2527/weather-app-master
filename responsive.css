@@ -1,0 +1,30 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header-section{  max-height: 80px;  }
+    .menu-bar-header{  display: none;  }
+    .menu-icon-header{ display: block; }
+    #weatherify-logo{ max-width: 6rem; }
+    #cloud-icon-header{ font-size: 10rem; top: -30px; left: -.1rem; }
+    .content-section{ flex-direction: column-reverse;}
+    .report-side{ margin-top: 2rem;}
+    .search-side{ margin-bottom: 2rem; padding: 1rem;}
+    .searchSide-btn{ padding: .5rem;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .menu-icon-header{ display: none;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .menu-icon-header{ display: none;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .menu-icon-header{ display: none;}
+}
